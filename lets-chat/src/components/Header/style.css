@@ -1,0 +1,91 @@
+.header{
+    width: 100%;
+    position: relative;
+    height: 50px;
+    display: flex;
+    background: #7d8a0a;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.logo{
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin: 15px;
+    text-shadow: 0 0;
+}
+
+.search {
+    margin-top: 10px;
+    margin-left: 150px;
+    width: fit-content;
+}
+
+
+.search #searchInput {
+    width: 400px;
+    height: 25px;
+    padding-left: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+
+.user {
+    margin-left: 430px;
+    color: #fff;
+    font-size: 15px;
+    display: inherit;
+    width: 200px
+}
+
+.userName {
+    margin-top: 15px;
+    margin-right: 10px;
+    display: inline-block;
+    position: relative;
+    font-size: 12px;
+}
+
+.userImage {
+    margin-top: 2px;
+    display: inline-block;
+}
+
+.userImage img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.menu{
+    display: flex;
+    margin: 20px;
+}
+
+.menu > li > a{
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 0;
+    text-decoration: none;
+}
+
+.leftMenu{
+    display: flex; 
+    color: #fff; 
+    margin: 20px;
+}
+
+.leftMenu > li{
+    margin: 0 10px;
+}
+
+.leftMenu > li > a{
+    color: #fff;
+}
+
+.leftMenu > li > a.active{
+    font-weight: bold;
+}
