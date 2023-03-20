@@ -21,7 +21,7 @@ const Header = (props) => {
           />
         </div>
         <div className="user">
-            <div className="userName">Virat Kohli Singh Cricket</div>
+            <div className="userName">Virat Kohli</div>
             <div className="userImage">
                 <img src={viratkohli} />
             </div>

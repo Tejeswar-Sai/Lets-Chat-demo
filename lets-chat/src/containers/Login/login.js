@@ -1,10 +1,11 @@
 import React from 'react'
+import Layout from '../../components/Layout/layout';
 
 function Login() {
   return (
-    <div>
-      <h1>Login Page</h1>
-    </div>
+    <Layout>
+    <div>Login Page</div>
+    </Layout>
   )
 }
 
