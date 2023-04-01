@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Layout from "../../components/Layout/layout";
 import { signup } from "../../actions/auth.actions";
 import { useDispatch } from "react-redux";
-import "./style.css";
+import "../style.css";
 
 const Signup = (props) => {
   const [firstname, setFirstName] = useState("");
@@ -76,7 +76,7 @@ const Signup = (props) => {
             placeholder="Confirm Password"
           />
           <div className="form-button">
-            <button id="reset" onClick={() => resetForm()} name="resetForm">
+            <button id="reset" onClick={(e) => resetForm(e)} name="resetForm" type="button"> 
               Reset
             </button>
             <button id="submitSignUp" name="submit" type="submit" onClick={signUpUser}>

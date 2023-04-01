@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { getFirestore } from 'firebase/firestore/lite';
-import { getAuth } from 'firebase/auth';
-import { initializeApp } from "firebase/app";
+import firebase  from "firebase/compat/app";
+import 'firebase/compat/firestore';
+import 'firebase/compat/auth';
 import { Provider } from 'react-redux';
 import store from './stores/store';
 
@@ -20,9 +20,9 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const firestore =  getFirestore(app);
-const auth = getAuth(app);
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+const firestore =  firebaseApp.firestore();
+const auth = firebaseApp.auth();
 
 
  window.store = store;
